@@ -71,15 +71,16 @@
 					<li>
 						<!--Modification texte-->
 						<a href="index.html">Accueil</a>
-					</li>
-					<!--balise non necessaire
-					<li>
-					</li>
-					-->
+					</li>   
 					<li>
 						<!-- Modification html et texte -->
 						<a href="#bloc-7">Formulaire</a>
 					</li>
+					<li>
+						<!-- Modification html et texte -->
+					    <a href="#agence">Notre Agence</a>
+					</li>
+					
 				</ul>
 			</div>
 		</nav>
@@ -88,8 +89,10 @@
 </header>
 <!-- bloc-0 END -->
 
-<!-- bloc-6 -->
-<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+
+<!--ajout bloc 1 page accueil-->
+<!-- bloc-1-presentation -->
+<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
@@ -99,65 +102,104 @@
 				<p class="text-center mg-lg tc-white tight-width-whitespace">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-				</p>
+				</p>	
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-6 END -->
+<!-- bloc-1-presentation END -->
+
 
 <!-- bloc-7 -->
 <div class="bloc bgc-white l-bloc" id="bloc-7">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<!--ajout data- -->
+				<h2>Formulaire de contact</h2>
+				<br>
+				<!--ajout "data-"" -->
 				<form id="form_1" novalidate data-success-msg="Your message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+
 					<div class="form-group">
-						<label>
-							Nom
-							<!--Déplacer input dans label-->
-							<input id="name" class="form-control" required />
+						<!--ajout "for"-->
+						<label for="name">
+							<!--ajout "votre"-->
+							Votre nom :	
 						</label>
-						
+						<!--modif "type", ajout "name", "placeholder"-->
+						<input type="text" name="name" id="name" placeholder="Dupont Bernard" class="form-control" required />
 					</div>
+
 					<div class="form-group">
-						<label>
-							Adresse email
-							<!--Déplacer input dans label-->
-							<input id="email" class="form-control" type="email" required />
+						<!--ajout "for"-->
+						<label for="adress">
+							<!--ajout "votre"-->
+							Votre adresse email :
 						</label>
-						
+						<!--modif "type", ajout "name", "placeholder"-->
+						<input type="email" name="adress" id="adress" placeholder="dupontbernard@gmail.com" class="form-control" required />
 					</div>
+
+                    <!--ajout label "number"-->
 					<div class="form-group">
-						<label>
-							<!--Déplacer input dans label-->
+						<label for="number">
+							Votre Numéro de téléphone :
+						</label>
+						<input type="tel" name="number" id="number" placeholder="0602664503" min="10" max="100" step="10" class="form-control" required />
+					</div>
+
+					<div class="form-group">
+						<!--ajout "for"-->
+						<label for="information">
 							Comment nous avez-vous connu ?
-							<input class="form-control" type="email" required id="input_504" />
-						</label>
-						
+						</label><br>
+						<!--ajout balise "select"-->
+						<select name="information" id="information">
+							 <option value="internet">En naviguant sur Internet</option>
+							 <option value="reseaux">Sur les réseaux sociaux</option>
+							 <option value="connaissance">Par une connaissance</option>
+							 <option value="partenaire">Par un de nos partenaires</option>
+							 <option value="client">Par un de nos clients</option>
+
+							 <option value="autre">Autre...</option>
+						</select>
+						<br>
+						<br>
+						<!-- ajout label "autre"-->	
+						<label for="autre">
+							Si autre, veuillez précisez...
+						</label><br>
+						<input type="text" name="autre" id="autre" class="form-control" required />
 					</div>
+
 					<div class="form-group">
 						<label>
-							<!--Déplacer textarea dans label-->
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-							<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-						</label>
+							<!--modif texte-->
+							Parlez-nous de votre projet (Ajoutez autant de détails que nécessaire)<br>
+						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
+
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
 					</button>
 				</form>
+
+
 			</div>
 			<div class="col-sm-6">
-				<p>
-					<!--ajout liens-->
-					<a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a><br>
-					<a href="https://www.google.com/maps/place/2+Pl.+Sathonay,+69001+Lyon/@45.7695241,4.8279786,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4eb020f3664e9:0x13e3d71752922c1f!8m2!3d45.7695241!4d4.8301673">2 place Sathonay 69001 Lyon</a><br>
-					Ouvert de 9h à 18h, du lundi au vendredi<br>
+				<div id="agence">
+					<!--ajout titre et lien-->
+					<h2>Notre agence</h2>
+					<p><a href="https://www.google.com/maps/place/2+Pl.+Sathonay,+69001+Lyon/@45.7695241,4.8279786,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4eb020f3664e9:0x13e3d71752922c1f!8m2!3d45.7695241!4d4.8301673" title="Venez nous rendre visite!">
+					2 place Sathonay 69001 Lyon</a></p>
+					<p>Ouvert de 9h à 18h, du lundi au vendredi<p>
+						<br>
+					<h2>Nos coordonnées</h2>
+					<!--ajout titre et lien-->
+					<p><a href="mailto:contact@lachouetteagence.com" title="Contactez-nous!">contact@lachouetteagence.com</a></p>
 					<!--ajout numéro tel-->
-					Numéro : 04 72 98 54 04
-				</p>
+					<p>Numéro : 04 72 98 54 04</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -166,7 +208,7 @@
 
 
 <!-- ScrollToTop Button -->
-<!--retablir la class-->
+<!--ajouter showScrollTop à la class-->
 <a class="bloc-button btn btn-d scrollToTop showScrollTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 <!-- ScrollToTop Button END-->
 
@@ -180,28 +222,32 @@
 					La chouette agence - Agence web basée à Lyon.<br>
 				</p>
 				<div class="row row-no-gutters social">
-					<div class="col-sm-3">
+					<!--col xs-->
+					<div class="col-xs-3">
 						<div class="text-center">
-							<!--liens réseaux sociaux-->
-							<a class="social" href="https://twitter.com/" title="twitter"><span class="fa fa-twitter icon-md"></span></a>
+							<!--ajout liens réseaux sociaux-->
+							<a class="social" href="https://twitter.com/" title="Twitter"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<!--col xs-->
+					<div class="col-xs-3">
 						<div class="text-center">
-							<!--liens réseaux sociaux-->
-							<a class="social" href="https://www.facebook.com/"title="facebook" ><span class="fa fa-facebook icon-md"></span></a>
+							<!--ajout liens réseaux sociaux-->
+							<a class="social" href="https://www.facebook.com/"title="Facebook" ><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<!--col xs-->
+					<div class="col-xs-3">
 						<div class="text-center">
-							<!--liens réseaux sociaux-->
-							<a class="social" href="https://dribbble.com/" title="dribble"><span class="fa fa-dribbble icon-md"></span></a>
+							<!--ajout liens réseaux sociaux-->
+							<a class="social" href="https://dribbble.com/" title="Dribble"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<!--col xs-->
+					<div class="col-xs-3">
 						<div class="text-center">
-							<!--liens réseaux sociaux-->
-							<a class="social" href="https://www.instagram.com/" title="instagram" ><span class="fa fa-instagram icon-md"></span></a>
+							<!--ajout liens réseaux sociaux-->
+							<a class="social" href="https://www.instagram.com/" title="Instagram" ><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
