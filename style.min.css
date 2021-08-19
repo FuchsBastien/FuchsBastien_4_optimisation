@@ -99,9 +99,11 @@ a:hover {
     background-attachment: fixed;
 }
 
+
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
-}
+        color: rgba(255, 255, 255, .7);
+    }
+
 
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
@@ -812,7 +814,7 @@ h4 {
 
 .tc-white {
     /*modif color contraste*/
-    color: #f5ddd0!important;
+    color: #e8d92e!important;
 }
 
 .btn-atomic-tangerine {
@@ -1095,9 +1097,19 @@ h4 {
     text-align: center
 }
 
-
+/*css footer*/
 @media (min-width: 768px) {
     .col-sm-4 {
         width: 50%;
     }
+}
+
+/*modif color contraste*/
+footer li a {
+    color : #090B77!important;
+
+}
+
+.footer_nav_titre {
+    color : #000000!important;
 }
