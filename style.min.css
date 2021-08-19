@@ -99,11 +99,10 @@ a:hover {
     background-attachment: fixed;
 }
 
-
+/*modif color contraste*/
 .d-bloc {
-        color: rgba(255, 255, 255, .7);
-    }
-
+    color: #000000;
+}
 
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
