@@ -1098,7 +1098,7 @@ h4 {
 
 /*css footer*/
 @media (min-width: 768px) {
-    .col-sm-4 {
+    #bloc-8 .col-sm-4 {
         width: 50%;
     }
 }
