@@ -106,6 +106,7 @@ a:hover {
 
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
+
 }
 
 .d-bloc .icon-round,
@@ -825,7 +826,7 @@ h4 {
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
     /*modif color contraste*/
-    color: #090b77!important
+    color: #090b77!important;
 }
 
 .ltc-white {
@@ -1114,4 +1115,9 @@ footer li a {
 
 .footer_nav_titre {
     color : #000000!important;
+}
+
+
+#agence a:hover {
+    color: #090b77!important;
 }
